@@ -676,7 +676,7 @@ img {
 .footer__social-link {
   font-family: Titillium Web, sans-serif;
   color: #FFFFFF;
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: 2.14px;
@@ -1041,6 +1041,92 @@ img {
     font-size: 36px;
   }
 }
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: -1px;
+  width: 100%;
+}
+.table__row {
+  display: flex;
+  flex-direction: row;
+  gap: -1px;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0) 0px 8px 36px;
+  text-decoration: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .table__row:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 36px;
+  }
+}
+.table__row:active {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 36px;
+}
+.table__cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  border: 1px solid #EFEEEE;
+  width: 100%;
+}
+.table__logo-wrapper {
+  width: 100%;
+  max-width: 132px;
+}
+.table__logo {
+  border-radius: 50%;
+}
+.table__name-wrapper {
+  max-width: 160px;
+  justify-content: flex-start;
+}
+.table__name {
+  font-family: Heldane-Display-Bold, serif;
+  font-weight: 700;
+  color: #102A43;
+  font-size: 28px;
+  text-align: left;
+}
+.table__description {
+  font-family: Titillium Web, sans-serif;
+  font-weight: 400;
+  color: #102A43;
+  font-size: 16px;
+}
+.table__links-wrapper {
+  max-width: 85px;
+}
+.table__links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  width: 100%;
+}
+.table__link {
+  text-decoration: none;
+  font-family: Titillium Web, sans-serif;
+  font-weight: 700;
+  color: #102A43;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .table__link:hover {
+    color: #CB6E17;
+  }
+}
+.table__link:active {
+  color: #CB6E17;
+}
+
 .cards {
   display: flex;
   flex-direction: column;
