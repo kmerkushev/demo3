@@ -35,7 +35,7 @@
 
 <body class="body">
 
-    <header class="body__header header">
+    <header class="body__header header" id="header">
       <div class="header__inner">
         <img width="58" height="58" class="header__logo" src="img/logo-round.svg" alt="DePIN logo">
         <ul class="header__links">
@@ -43,10 +43,11 @@
           <li class="header__link-wrapper"><a class="header__link" href="#portfolio">Portfolio and Thesis</a></li>
           <li class="header__link-wrapper"><a class="header__link" href="#future">Future Projects</a></li>
         </ul>
-        <div class="header__mobile">
+        <div class="header__mobile ">
           <button class="header__open-menu" id="open-menu" aria-label="Open menu"></button>
           <button class="header__close-menu visually-hidden" id="close-menu" aria-label="Close menu"></button>
         </div>
+        <div class="header__blur" id="blur"></div>
       </div>
     </header>
 
@@ -1619,7 +1620,8 @@
       const openMenuBtn = document.querySelector('#open-menu');
       const closeMenuBtn = document.querySelector('#close-menu');
       const header = document.querySelector('#header');
-      const menuLinks = document.querySelector('.menu__links');
+      const menuLinks = document.querySelector('.header__links');
+      const blur = document.querySelector('#blur');
 
       const openMenuHandler = () => {
         header.classList.add('opened');
@@ -1643,6 +1645,8 @@
           closeMenuHandler();
         }
       }
+
+      blur.addEventListener('click', closeMenuHandler);
 
       document.addEventListener('click', clickDocumentHandler);
     </script>
