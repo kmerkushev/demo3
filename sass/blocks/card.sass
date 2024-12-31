@@ -1,0 +1,92 @@
+.card
+  transition: 0.55s cubic-bezier(0, 0.89, 0.44, 1)
+  background-color: $card-bg
+  padding: 40px 50px
+  box-shadow: $shadow-card
+  transform: translateY(-4px)
+  max-width: 840px
+  box-sizing: border-box
+
+  &__h2
+    font-family: $helt
+    font-weight: 400
+    text-align: left
+    color: $text-card-h2
+    font-size: 38px
+    line-height: 1.25
+    letter-spacing: -0.5px
+    margin: 0
+    margin-bottom: 24px
+
+  &__h3
+    font-family: $tit
+    font-size: 16px
+    line-height: 24px
+    font-weight: 700
+    color: $text-card-h3
+    text-transform: uppercase
+    letter-spacing: 1.5px
+    margin: 0
+    margin-bottom: 8px
+    
+
+  &__h4
+    font-family: $helt
+    font-weight: 400
+    text-align: left
+    color: $text-card-h2
+    font-size: 26px
+    line-height: 1.25
+    letter-spacing: -0.5px
+    margin: 0
+    margin-top: 24px
+    margin-bottom: 10px
+
+  &__ul-second
+    padding-left: 20px
+
+  &__p
+    margin: 0
+
+  &__p,
+  &__li
+    font-family: $tit
+    font-size: 18px
+    line-height: 1.5
+    color: $text-card-p
+
+  &__li
+    margin-bottom: 8px
+
+    &:last-of-type
+      margin-bottom: 0
+
+  
+  &__split
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    gap: 30px
+
+    &-divider
+      min-width: 1px
+      min-height: 100%
+      background-color: $border
+
+    &-part
+      width: 100%
+
+    &-h4
+      font-family: $hel
+      color: $text-card-h4
+      font-size: 21px
+      margin: 0
+      margin-bottom: 8px
+
+    &-p
+      font-family: $tit
+      font-size: 18px
+      line-height: 1.5
+      color: $text-card-p
+      margin: 0
+      

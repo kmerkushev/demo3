@@ -1,0 +1,54 @@
+html
+  scroll-behavior: smooth
+  min-width: 320px
+
+.visually-hidden, .visually-hidden *
+  position: absolute !important
+  clip: rect(0 0 0 0) !important
+  width: 1px !important
+  height: 1px !important
+  margin: -1px !important
+  padding: 0 !important
+  top: 0
+  left: 0
+  font-size: 0 !important
+  line-height: 0 !important
+
+img
+  max-width: 100%
+
+.reversed
+  transform: scale(-1, 1)
+
+
+.bold
+  font-weight: 700
+
+
+.mobile-only
+  display: none
+
+@media screen and (max-width 480px)
+  .mobile-only
+    display: block
+
+
+@media screen and (min-width: 481px)
+  .mobile-br
+    display: none
+
+
+
+@function darker($color, $tone)
+  $adjust: -16*$tone
+  @return adjust-color($color, $red: $adjust, $green: $adjust, $blue: $adjust)
+
+
+.highlighted
+  background-color: rgba(0,60,255,0.8)
+  color: #ffffff
+  transition: all 0.3s ease
+
+  &:hover
+    color: inherit
+    background-color: rgba(0,60,255,0)
