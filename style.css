@@ -1127,6 +1127,27 @@ img {
   color: #CB6E17;
 }
 
+@media (max-width: 990px) {
+  .table__logo-wrapper {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .table__name-wrapper {
+    max-width: 100px;
+  }
+  .table__name {
+    font-size: 21px;
+  }
+}
+@media (max-width: 480px) {
+  .table__description-wrapper {
+    display: none;
+  }
+  .table__name-wrapper {
+    max-width: 100%;
+  }
+}
 .cards {
   display: flex;
   flex-direction: column;
