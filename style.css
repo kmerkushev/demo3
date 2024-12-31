@@ -866,7 +866,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 170px;
+  padding-top: 40px;
+  padding-bottom: 120px;
 }
 .port__inner {
   max-width: 1200px;
@@ -934,6 +935,9 @@ img {
   }
 }
 @media (max-width: 768px) {
+  .port {
+    padding-bottom: 70px;
+  }
   .port__h2 {
     font-size: 56px;
   }
