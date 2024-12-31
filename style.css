@@ -487,7 +487,8 @@ img {
 }
 .header__link {
   position: relative;
-  font-family: Heldane-Display-Regular, serif;
+  font-family: Titillium Web, sans-serif;
+  font-weight: 600;
   color: #102A43;
   font-size: 18px;
   text-decoration: none;
@@ -607,6 +608,7 @@ img {
   flex-direction: column;
   align-items: center;
   padding-top: 170px;
+  padding-bottom: 90px;
 }
 .hero__inner {
   max-width: 1200px;
@@ -644,8 +646,26 @@ img {
   line-height: 1.25;
   letter-spacing: 0.4px;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 0;
   max-width: 760px;
+}
+.hero__caption {
+  margin-top: 42px;
+  margin-bottom: -6px;
+  background-color: #EFEEEE;
+  padding: 24px;
+  border-radius: 24px 24px 0 0;
+  font-family: Heldane-Display-Regular, serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #102A43;
+  text-align: center;
+  max-width: 60%;
+  line-height: 1.25;
+}
+.hero__map {
+  max-width: 960px;
+  border-radius: 16px;
 }
 
 .port {
@@ -679,11 +699,11 @@ img {
   max-width: 940px;
 }
 .port__h3 {
-  font-family: Heldane-Display-Bold, serif;
-  font-weight: 700;
+  font-family: Heldane-Display-Regular, serif;
+  font-weight: 400;
   text-align: center;
   color: #102A43;
-  font-size: 58px;
+  font-size: 64px;
   line-height: 1;
   letter-spacing: 1.28px;
   margin: 0;
