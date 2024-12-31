@@ -37,12 +37,16 @@
 
     <header class="body__header header">
       <div class="header__inner">
-        <img width="54" height="54" class="header__logo" src="img/logo-nobg.svg" alt="DePIN logo">
+        <img width="58" height="58" class="header__logo" src="img/logo-round.svg" alt="DePIN logo">
         <ul class="header__links">
           <li class="header__link-wrapper"><a class="header__link" href="#about">About</a></li>
           <li class="header__link-wrapper"><a class="header__link" href="#portfolio">Portfolio and Thesis</a></li>
           <li class="header__link-wrapper"><a class="header__link" href="#future">Future Projects</a></li>
         </ul>
+        <div class="header__mobile">
+          <button class="header__open-menu" id="open-menu" aria-label="Open menu"></button>
+          <button class="header__close-menu visually-hidden" id="close-menu" aria-label="Close menu"></button>
+        </div>
       </div>
     </header>
 
@@ -53,7 +57,7 @@
 
       <section class="main__hero hero">
         <div class="hero__inner">
-          <h1 class="hero__h1">Depin Index of 20</h1>
+          <h1 class="hero__h1">DePin 20</h1>
           <h2 class="hero__h2">Invest in tokens that have real world usage and cash flows. Its time to get real.</h2>
           <p class="hero__p">DePIN 20 is a decentralized index fund represented by a single token, <strong class="bold">$DEPIN</strong>, providing accessible exposure to the top 20 Decentralized Physical Infrastructure Network (DePIN) projects. It allows investors easy and  diversified exposure to leading compute, energy, connectivity, and data collection networks.</p>
           <p class="hero__caption">
@@ -65,62 +69,66 @@
       </section>
 
 
-      <section class="main__about about" id="about">
-        <div class="about__cards cards">
-          <div class="cards__inner">
-            <article class="cards__card card">
-              <h3 class="card__h3">DePIN</h3>
-              <h2 class="card__h2">Why is the Timing Right?</h2>
-              <ol class="card__ol">
-                <li class="card__li"><strong class="bold">Growing Real-World Adoption</strong>: The sector is gaining significant traction, highlighted by successful initiatives such as Helium Mobile surpassing 120k subscribers in its first year, Glow deploying 70 solar farms across regions from California to India, and GEODNET establishing the world’s largest RTK network with over 11k nodes.</li>
-                <li class="card__li"><strong class="bold">Surge in Early-Stage Fundraising</strong>: In 2024, DePIN projects experienced explosive growth in funding, increasing 326.45% compared to 2023. Key areas like compute, energy, and data collection attracted over $266 million in total investment.</li>
-                <li class="card__li"><strong class="bold">Liquid Market Signals a Breakout</strong>: 2024 was a pivotal year for DePIN, with the sector's total market capitalization climbing 132% year-over-year, exceeding $40 billion.</li>
-                <li class="card__li"><strong class="bold">Rapid Revenue Growth</strong>: Protocols are beginning to generate substantial revenue, signaling demand-side traction previously absent. GLOW surpassed $25 million in revenue, while Helium and IO.net both exceeded $12 million. Other notable performers include Filecoin ($8 million), Render ($4 million), Akash ($4 million), and GEODNET ($2 million), all surpassing $1 million in annual recurring revenue (ARR).</li>
-              </ol>
-            </article>
+      <section class="main__about about port" id="about">
+        <div class="about__inner port__inner">
 
-            <article class="cards__card card">
-              <h3 class="card__h3">DePIN</h3>
-              <h2 class="card__h2">Our Investment Thesis</h2>
-              <p class="card__p">DePIN is poised to disrupt trillion-dollar industries—including compute, energy, transportation, and data—by transforming communities into decentralized supply chains. 
-                Through crowdsourced scalability, token incentives, and Web3 infrastructure, DePIN networks will outpace traditional incumbents. These networks generate commodities and services in massive markets, with tokens directly accruing value through sustainable cash flow—underpinned by token buybacks and/or burn
-                </p>
-            </article>
+        
+          <div class="about__cards cards">
+            <div class="cards__inner">
+              <article class="cards__card card">
+                <h3 class="card__h3">DePIN</h3>
+                <h2 class="card__h2">Why is the Timing Right?</h2>
+                <ol class="card__ol">
+                  <li class="card__li"><strong class="bold">Growing Real-World Adoption</strong>: The sector is gaining significant traction, highlighted by successful initiatives such as Helium Mobile surpassing 120k subscribers in its first year, Glow deploying 70 solar farms across regions from California to India, and GEODNET establishing the world’s largest RTK network with over 11k nodes.</li>
+                  <li class="card__li"><strong class="bold">Surge in Early-Stage Fundraising</strong>: In 2024, DePIN projects experienced explosive growth in funding, increasing 326.45% compared to 2023. Key areas like compute, energy, and data collection attracted over $266 million in total investment.</li>
+                  <li class="card__li"><strong class="bold">Liquid Market Signals a Breakout</strong>: 2024 was a pivotal year for DePIN, with the sector's total market capitalization climbing 132% year-over-year, exceeding $40 billion.</li>
+                  <li class="card__li"><strong class="bold">Rapid Revenue Growth</strong>: Protocols are beginning to generate substantial revenue, signaling demand-side traction previously absent. GLOW surpassed $25 million in revenue, while Helium and IO.net both exceeded $12 million. Other notable performers include Filecoin ($8 million), Render ($4 million), Akash ($4 million), and GEODNET ($2 million), all surpassing $1 million in annual recurring revenue (ARR).</li>
+                </ol>
+              </article>
 
-            <article class="cards__card card">
-              <h3 class="card__h3">DePIN</h3>
-              <h2 class="card__h2">Our Edge</h2>
-              <div class="card__split">
-                <div class="card__split-part">
-                  <h4 class="card__split-h4">DePIN Representation and Diversification</h4>
-                  <p class="card__split-p">Provides a proxy portfolio for the broader DePIN sector market as it changes in nature over time.</p>
-                </div>
-                <div class="card__split-divider"></div>
-                <div class="card__split-part">
-                  <h4 class="card__split-h4">Rebalancing and Reconstruction</h4>
-                  <p class="card__split-p">Fund weights and constituents are rebalanced, added or removed on a monthly basis in accordance with the thesis and conviction. You don't have to research 10 hours a day - we do it for you</p>
-                </div>
-              </div>
-            </article>
+              <article class="cards__card card">
+                <h3 class="card__h3">DePIN</h3>
+                <h2 class="card__h2">Our Investment Thesis</h2>
+                <p class="card__p">DePIN is poised to disrupt trillion-dollar industries—including compute, energy, transportation, and data—by transforming communities into decentralized supply chains. 
+                  Through crowdsourced scalability, token incentives, and Web3 infrastructure, DePIN networks will outpace traditional incumbents. These networks generate commodities and services in massive markets, with tokens directly accruing value through sustainable cash flow—underpinned by token buybacks and/or burn
+                  </p>
+              </article>
 
-            <article class="cards__card card">
-              <h3 class="card__h3">DePIN</h3>
-              <h2 class="card__h2">Why Invest</h2>
-              <div class="card__split">
-                <div class="card__split-part">
-                  <h4 class="card__split-h4">Diversification</h4>
-                  <p class="card__split-p">
-                    Diverse Exposure to DePIN across energy, compute, transport, unique data, wireless and AI</p>
+              <article class="cards__card card">
+                <h3 class="card__h3">DePIN</h3>
+                <h2 class="card__h2">Our Edge</h2>
+                <div class="card__split">
+                  <div class="card__p card__split-part">
+                    <h4 class="card__split-h4">DePIN Representation and Diversification</h4>
+                    <p class="card__p card__split-p">Provides a proxy portfolio for the broader DePIN sector market as it changes in nature over time.</p>
+                  </div>
+                  <div class="card__split-divider"></div>
+                  <div class="card__p card__split-part">
+                    <h4 class="card__split-h4">Rebalancing and Reconstruction</h4>
+                    <p class="card__p card__split-p">Fund weights and constituents are rebalanced, added or removed on a monthly basis in accordance with the thesis and conviction. You don't have to research 10 hours a day - we do it for you</p>
+                  </div>
                 </div>
-                <div class="card__split-divider"></div>
-                <div class="card__split-part">
-                  <h4 class="card__split-h4">Growth</h4>
-                  <p class="card__split-p">
-                    Depin sector is set to produce $175m in revenue in 2025 and 2024 was a breakout year with fundraising
-                    </p>
+              </article>
+
+              <article class="cards__card card">
+                <h3 class="card__h3">DePIN</h3>
+                <h2 class="card__h2">Why Invest</h2>
+                <div class="card__split">
+                  <div class="card__p card__split-part">
+                    <h4 class="card__split-h4">Diversification</h4>
+                    <p class="card__p card__split-p">
+                      Diverse Exposure to DePIN across energy, compute, transport, unique data, wireless and AI</p>
+                  </div>
+                  <div class="card__split-divider"></div>
+                  <div class="card__p card__split-part">
+                    <h4 class="card__split-h4">Growth</h4>
+                    <p class="card__p card__split-p">
+                      Depin sector is set to produce $175m in revenue in 2025 and 2024 was a breakout year with fundraising
+                      </p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </div>
           </div>
         </div>
       </section>
@@ -1603,15 +1611,42 @@
           <p class="footer__copyright">©2024 Depin. All Rights Reserved.</p>
         </div>
 
-
-
       </div>
 
     </footer>
 
     <script>
-      
+      const openMenuBtn = document.querySelector('#open-menu');
+      const closeMenuBtn = document.querySelector('#close-menu');
+      const header = document.querySelector('#header');
+      const menuLinks = document.querySelector('.menu__links');
+
+      const openMenuHandler = () => {
+        header.classList.add('opened');
+        openMenuBtn.classList.add('visually-hidden');
+        closeMenuBtn.classList.remove('visually-hidden');
+      }
+
+      const closeMenuHandler = () => {
+        header.classList.remove('opened');
+        openMenuBtn.classList.remove('visually-hidden');
+        closeMenuBtn.classList.add('visually-hidden');
+      }
+
+      openMenuBtn.addEventListener('click', openMenuHandler);
+      closeMenuBtn.addEventListener('click', closeMenuHandler);
+      menuLinks.addEventListener('click', closeMenuHandler);
+
+
+      const clickDocumentHandler = (evt) => {
+        if(header.classList.contains('opened') && !evt.target.closest("#header")) {
+          closeMenuHandler();
+        }
+      }
+
+      document.addEventListener('click', clickDocumentHandler);
     </script>
+
     <script src="js/script.js" type="text/javascript"></script>
 </body>
 
