@@ -805,7 +805,7 @@ img {
   line-height: 1.25;
   letter-spacing: 0.4px;
   margin: 0;
-  margin-bottom: 0;
+  margin-bottom: 40px;
   max-width: 760px;
 }
 .hero__caption {
